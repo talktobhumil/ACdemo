@@ -34,10 +34,8 @@ class Testrequestpage (Baseclass):
         hcr = HomeCleaningRequest(self.driver)
         print(hcr.get_form_title().text)
         hcr.select_unit()
-        #hcr.click_searched_unit()
         time.sleep(5)
         hcr.enter_request_details()
-        time.sleep(15)
 
 
 
